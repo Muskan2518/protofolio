@@ -3,56 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first prtofolio website</title>
+    <title>Protofolio Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <nav>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">about</a>
-            </li>
-            <li>
-                <a href="#">services</a>
-            </li>
-            <li>
-                <a href="#">protofolio</a>
-            </li>
-
-            <li>
-                <a href="#">contact</a>
-            </li>
-        </nav>
-        
-    </div>
-    <div class="header">
-        <p>Web Designer</p>
-        <h1>WELCOME TO KNOW MORE ABOUT <br></h1>
-        <h1>MUSKAN</h1>
-    </div>
-        <div id="about-me" class="about-me">
-            <h2>About Me</h2>
-            <br>
-            <img src="https://www.shutterstock.com/image-vector/hand-drawn-word-about-me-600w-718270843.jpg">
-            <br>
-            <br>
+            <div class="left">Muskan's Protofolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li>  <a href="/">About</a></li>
+                    <li>   <a href="/">Education</a></li>
+                    <li>  <a href="/">Projects</a></li>
+                    <li>   <a href="/">Contact Me</a></li> 
+                </ul>
+                                            
 
 
-            <p>Hello! I am Muskan, a passionate web designer.</p>
-            <br>
-        
-            <p>I strive to make websites that not only look great but also provide a smooth and engaging user experience. My goal is to bring creativity and functionality together to craft websites that leave a lasting impression.</p>
-            <br>
-            <div class="subtitles">
-                <p class="titles"> Skills</p>
-                <p class="titles"> Experience</p>
-                <p class="titles"> Education</p>
-
+                </ul>
             </div>
-        </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is
+                <span class="purple">Muskan</span> 
+                <br>
+                <div >and I     am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="https://img.freepik.com/premium-photo/girl-white-shirt-holding-laptop-black-background_102583-1493.jpg">
+            </div>
+
+        </section>
+    <hr>
+        <section class="secondsection">
+            <h1 > Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.'],
+          typeSpeed: 50,
+        });
+      </script>
 
 </body>
 </html>

@@ -3,153 +3,153 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color:black;
     color: #333;
     line-height: 1.6;
-    margin: 0;
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #0077cc;
-    padding: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-nav li {
-    list-style: none;
-    margin: 0 15px;
-    display: inline-block;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    nav li {
-        margin: 10px 0;
-    }
 }
 
 /* Header Styling */
-.header {
-    text-align: left; /* Aligns the text to the left */
-    padding: 20px 0; /* Adds some spacing around the text */
-    font-weight: bold; /* Makes all text bold */
-    color: #333; /* Sets the text color to a neutral dark tone */
+header {
+    background-color: #e02cbf;
+    color: white;
+    padding: 1rem 0;
 }
 
-.header p {
-    font-size: 30px; /* Sets the font size for the subtitle */
-    margin-bottom: 10px; /* Adds space below the subtitle */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.header h1 {
-    font-size: 45px; /* Sets the font size for the main heading */
-    letter-spacing: 1px; /* Adds slight spacing between letters */
-    text-transform: uppercase; /* Converts text to uppercase */
+header .left {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-/* About Me Section Styling */
-.about-me {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Items are arranged horizontally */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically align items in the center */
-    padding: 40px 20px; /* Adds padding around the content */
-    background-color: #f0f4f8; /* Light background color */
-    margin-top: 30px; /* Adds space between sections */
-    border-radius: 8px; /* Rounded corners for the section */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+header .right ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
 
-.about-me h2 {
-    font-size: 36px; /* Larger font size for the heading */
-    color: #0077cc; /* Blue color for the heading */
-    font-weight: bold; /* Bold text for emphasis */
-    margin-bottom: 20px; /* Space below the heading */
-    text-transform: uppercase; /* Converts text to uppercase */
-    letter-spacing: 1.5px; /* Adds space between letters */
-    max-width: 60%; /* Ensure heading and text take up max 60% of space */
+header .right ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+header .right ul li a:hover{
+    color:black;
+    font-size:1.2rem;
+    transform: scale(1.1);
 }
 
-.about-me img {
-    max-width: 150px; /* Reduce image size */
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 20px; /* Space between the text and image */
-    border-radius: 8px; /* Rounded corners for the image */
+
+
+header .right ul li:hover {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-.about-me p {
-    font-size: 18px; /* Sets the font size for the paragraph */
-    color: #333; /* Dark grey text for better readability */
-    line-height: 1.6; /* Increases line height for readability */
-    margin-bottom: 20px; /* Adds space between paragraphs */
+/* Make the navigation responsive */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header .right ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+/* Main Section Styling */
+main {
+    padding: 2rem;
 }
 
+/* First Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Left Section */
+.leftsection {
+    flex: 1;
+    font-size: 3rem; /* Reduced font size slightly for better balance */
+    padding: 2rem; /* Adjusted padding for consistency */
+    color: white;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section Image */
+.rightsection img {
+    max-width: 100%; /* Adjusted to 50% for better scaling */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Added hover effect */
+}
+
+.rightsection img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* For the right section container */
+.rightsection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* First Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.purple{
+    color:rgb(213, 11, 213);
+}
 /* Responsive Design */
 @media (max-width: 768px) {
-    .about-me {
-        flex-direction: column; /* Stack the image and text vertically on smaller screens */
-        text-align: center; /* Center align text */
+    .firstsection {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    .about-me h2 {
-        font-size: 28px; /* Adjusts the heading font size */
+    .leftsection {
+        font-size: 2rem;
+        padding: 1.5rem;
     }
 
-    .about-me p {
-        font-size: 16px; /* Reduces paragraph font size for smaller screens */
-    }
-
-    .about-me img {
-        max-width: 120px; /* Further reduce the image size on smaller screens */
-        margin-left: 0; /* Remove margin for better alignment */
-        margin-top: 20px; /* Adds some space above the image */
+    .rightsection img {
+        max-width: 80%; /* Larger size for smaller screens */
     }
 }
-
-/* Subtitles Section */
-.subtitles {
-    display: flex;
-    margin: 20px 0 40px;
+#element{
+    color:rgb(213, 11, 213);
 }
+.secondsection{
+    max-width:80vw;
+    margin:auto;
+    text-align:left;
+    color:white;
 
-.titles {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500; 
-    cursor:pointer;
-    position:relative;
 }
