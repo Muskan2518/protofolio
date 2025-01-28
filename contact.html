@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 1100px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+        .contact-section {
+            flex: 2;
+            min-width: 300px;
+        }
+        h1, h2 {
+            margin: 0 0 15px;
+        }
+        .contact-form {
+            margin-top: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            background: #2b2b2b;
+            color: white;
+            font-size: 16px;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid #f39c12;
+        }
+        button {
+            background: #f312bb;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+        button:hover {
+            background: #ec25ad;
+        }
+        .contact-info {
+            margin-top: 15px;
+        }
+        .social-icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .image-container, .contact-section {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://thumbs.dreamstime.com/b/business-woman-showing-26388070.jpg" height=500 width="250"   alt="Fashion Model">
+        </div>
+        <div class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="contact-form">
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Contact Me</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact:</h2>
+                <p>Email: muskan220405@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/muskan-3a8a31322/">
+                        <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-256x256-9ge3d19k.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/Muskan2518">
+                        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

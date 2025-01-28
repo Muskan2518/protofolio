@@ -85,7 +85,7 @@ main {
 /* Left Section */
 .leftsection {
     flex: 1;
-    font-size: 3rem; /* Reduced font size slightly for better balance */
+    font-size: 1rem; /* Reduced font size slightly for better balance */
     padding: 2rem; /* Adjusted padding for consistency */
     color: white;
     border-radius: 10px;
@@ -124,8 +124,14 @@ main {
     margin: 2rem 0;
 }
 .purple{
-    color:rgb(213, 11, 213);
+    color:rgb(238, 222, 238);
+    font-size:3rem;
 }
+.hello{
+    color:rgb(238, 222, 238);
+    font-size:3rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .firstsection {
@@ -144,7 +150,7 @@ main {
     }
 }
 #element{
-    color:rgb(213, 11, 213);
+    color:rgb(236, 237, 160);
 }
 .secondsection{
     max-width:80vw;
